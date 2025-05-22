@@ -33,11 +33,11 @@ export default function Features() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Pioneering the Digital Frontier
+            Ruling the Binary Badlands
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Discover how 999Prime is revolutionizing technology with innovative
-            solutions for the future.
+            Dominating the untamed digital badlands with rogue scripts and
+            quantum defiance.
           </p>
         </div>
 

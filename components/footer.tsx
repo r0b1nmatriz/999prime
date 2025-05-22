@@ -71,9 +71,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 md:mt-0">
-            <p className="text-gray-500 text-sm text-right">
-              Skeet the Horizon-Energy & Cosmic Buzz
-            </p>
+            <p className="text-gray-500 text-sm text-right"></p>
             <div className="mt-4 flex items-center space-x-4">
               <p className="text-gray-500 text-sm">
                 © 2025 - 999 Prime. All rights reserved
@@ -86,7 +84,6 @@ export default function Footer() {
                   height={67}
                   className="h-16 w-auto"
                 />
-               
               </Link>
             </div>
           </div>
