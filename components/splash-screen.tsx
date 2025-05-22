@@ -12,19 +12,11 @@ export function SplashScreen() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      const interval = setInterval(() => {
-        setProgress(prev => {
-          if (prev >= 100) {
-            clearInterval(interval)
-            setIsAnimatingOut(true)
-            return 100
-          }
-          return Math.min(prev + 2, 100)
-        })
-      }, 20)
-
-      return () => clearInterval(interval)
-    }, 500)
+      requestAnimationFrame(() => {
+        setProgress(100)
+        setIsAnimatingOut(true)
+      })
+    }, 800)
 
     return () => clearTimeout(timer)
   }, [])
