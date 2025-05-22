@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Figma-like cursor */
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.cursor-outline {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.15s ease;
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
