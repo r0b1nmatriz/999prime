@@ -1,6 +1,5 @@
-
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,10 +8,15 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div>
             <p className="text-gray-400 mb-4 max-w-xs text-left">
-              Pioneering the digital frontier with innovative solutions for a future-ready world.
+              Pioneering the digital frontier with innovative solutions for a
+              future-ready world.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors" aria-label="Twitter">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-purple-500 transition-colors"
+                aria-label="Twitter"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -26,7 +30,11 @@ export default function Footer() {
                   <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                 </svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors" aria-label="LinkedIn">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-purple-500 transition-colors"
+                aria-label="LinkedIn"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -42,7 +50,11 @@ export default function Footer() {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors" aria-label="GitHub">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-purple-500 transition-colors"
+                aria-label="GitHub"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -59,9 +71,13 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 md:mt-0">
-            <p className="text-gray-500 text-sm text-left">© 2025 999 Prime. All rights reserved</p>
+            <p className="text-gray-500 text-sm text-right">
+              Skeet the Horizon-Energy & Cosmic Buzz
+            </p>
             <div className="mt-4 flex items-center space-x-4">
-              <p className="text-gray-500 text-sm">Skeet the Horizon-Energy & Cosmic Buzz</p>
+              <p className="text-gray-500 text-sm">
+                © 2025 - 999 Prime. All rights reserved
+              </p>
               <Link href="/" className="hidden md:inline-block">
                 <Image
                   src="/images/999prime-logo.png"
@@ -70,11 +86,12 @@ export default function Footer() {
                   height={67}
                   className="h-16 w-auto"
                 />
+               
               </Link>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
