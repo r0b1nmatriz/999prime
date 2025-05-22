@@ -2,13 +2,13 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Progress } from "@/components/ui/progress"
-import { cn } from "@/lib/utils"
 import Image from "next/image"
+import { cn } from "@/lib/utils"
 
 export function SplashScreen() {
   const [progress, setProgress] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -16,17 +16,24 @@ export function SplashScreen() {
         setProgress(prev => {
           if (prev >= 100) {
             clearInterval(interval)
-            setTimeout(() => setIsVisible(false), 500)
+            setIsLoaded(true)
             return 100
           }
-          // Non-linear progress for more dynamic feel
           return prev + (100 - prev) * 0.08
         })
       }, 50)
       return () => clearInterval(interval)
     }, 500)
+
     return () => clearTimeout(timer)
   }, [])
+
+  useEffect(() => {
+    if (isLoaded) {
+      const timeout = setTimeout(() => setIsVisible(false), 600)
+      return () => clearTimeout(timeout)
+    }
+  }, [isLoaded])
 
   if (!isVisible) return null
 
@@ -34,7 +41,7 @@ export function SplashScreen() {
     <div className={cn(
       "fixed inset-0 z-50 flex flex-col items-center justify-center bg-black",
       "transition-opacity duration-500",
-      progress === 100 ? "opacity-0" : "opacity-100"
+      isLoaded ? "opacity-0" : "opacity-100"
     )}>
       <div className="w-80 space-y-8">
         <div className="relative h-24 mb-8">
