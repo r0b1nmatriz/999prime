@@ -69,7 +69,7 @@ export default function ContactCTA() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Skeet the Horizon?</h2>
               <p className="text-gray-300 mb-8">
-                Connect with our team to discover how 999 Prime can transform your vision into reality. Let's create the
+                Connect with us to discover how 999 Prime can transform your vision into reality. Let's create the
                 future together.
               </p>
               <div className="space-y-6">
@@ -92,7 +92,7 @@ export default function ContactCTA() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Email Us</h3>
-                    <p className="text-gray-400">contact@999prime.com</p>
+                    <p className="text-gray-400">999pr1me@proton.me</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -120,7 +120,7 @@ export default function ContactCTA() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Location</h3>
-                    <p className="text-gray-400">Quantum Tower, Innovation District, Neo Tokyo</p>
+                    <p className="text-gray-400">Coimbatore, Tamil Nadu, India</p>
                   </div>
                 </div>
               </div>
