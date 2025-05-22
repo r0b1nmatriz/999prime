@@ -5,17 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-black border-t border-gray-800 py-12">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center md:items-start">
-          <Link href="/" className="inline-block mb-4">
-            <Image
-              src="/images/999prime-logo.png"
-              alt="999 Prime Logo"
-              width={150}
-              height={50}
-              className="h-10 w-auto"
-            />
-          </Link>
-          <p className="text-gray-400 mb-4 max-w-xs text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-start">
+          <div>
+            <p className="text-gray-400 mb-4 max-w-xs text-left">
             Pioneering the digital frontier with innovative solutions for a future-ready world.
           </p>
           <div className="flex space-x-4">
@@ -68,8 +60,17 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">© {new Date().getFullYear()} 999 Prime. All rights reserved.</p>
-          <div className="mt-4 md:mt-0">
+          <div className="mt-4 md:mt-0 flex items-center space-x-4">
             <p className="text-gray-500 text-sm">Skeet the Horizon-Energy & Cosmic Buzz</p>
+            <Link href="/" className="hidden md:inline-block">
+              <Image
+                src="/images/999prime-logo.png"
+                alt="999 Prime Logo"
+                width={200}
+                height={67}
+                className="h-16 w-auto"
+              />
+            </Link>
           </div>
         </div>
       </div>
