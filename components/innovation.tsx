@@ -17,7 +17,7 @@ export default function Innovation() {
                   <span className="text-xs font-bold">1</span>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold mb-2">Quantum Computing Solutions</h3>
+                  <h3 className="text-xl font-semibold mb-2">Quantum Computing</h3>
                   <p className="text-gray-400">
                     Harnessing the power of quantum mechanics to solve complex problems at unprecedented speeds.
                   </p>
@@ -39,9 +39,9 @@ export default function Innovation() {
                   <span className="text-xs font-bold">3</span>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold mb-2">Sustainable Tech Ecosystems</h3>
+                  <h3 className="text-xl font-semibold mb-2">Revolt in Crypto-World</h3>
                   <p className="text-gray-400">
-                    Creating environmentally conscious technology that minimizes impact while maximizing performance.
+                    Creating environmentally conscious Crypto-currency that minimizes environmental impact while maximizing global impact.
                   </p>
                 </div>
               </div>
