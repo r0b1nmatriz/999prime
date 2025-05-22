@@ -56,7 +56,7 @@ export function SplashScreen() {
         </div>
         <div className="relative h-1 w-full overflow-hidden rounded-full bg-gray-800">
           <div 
-            className="absolute inset-0 bg-gradient-to-r from-purple-500 via-cyan-400 to-purple-500 rounded-full"
+            className="absolute inset-0 bg-gradient-to-r from-gray-100 via-white to-gray-100 rounded-full"
             style={{ 
               width: '200%',
               transform: `translateX(${progress - 100}%)`,
