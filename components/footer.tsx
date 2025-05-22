@@ -59,8 +59,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm">© {new Date().getFullYear()} 999 Prime. All rights reserved.</p>
+          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-start">
+            <p className="text-gray-500 text-sm text-left">© 2025 999 Prime. All rights reserved</p>
             <div className="mt-4 md:mt-0 flex items-center space-x-4">
               <p className="text-gray-500 text-sm">Skeet the Horizon-Energy & Cosmic Buzz</p>
               <Link href="/" className="hidden md:inline-block">
