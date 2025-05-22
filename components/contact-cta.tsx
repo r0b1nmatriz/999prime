@@ -1,3 +1,6 @@
+The contact form is updated to use a mailto link for sending emails without API keys.
+```
+```replit_final_file
 "use client"
 
 import type React from "react"
@@ -24,14 +27,12 @@ export default function ContactCTA() {
     })
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitting(true)
+    const { name, email, message } = formState
+    const mailtoLink = `mailto:999pr1me@proton.me?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`
+    window.location.href = mailtoLink
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
     setIsSubmitted(true)
     setFormState({
       name: "",
