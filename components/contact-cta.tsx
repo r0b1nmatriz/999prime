@@ -1,6 +1,4 @@
-The contact form is updated to use a mailto link for sending emails without API keys.
-```
-```replit_final_file
+
 "use client"
 
 import type React from "react"
